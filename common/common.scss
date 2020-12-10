@@ -149,22 +149,16 @@ ol.category-breadcrumb {
   }
 }
 
-.discourse-no-touch .admin-controls button:hover,
- .discourse-no-touch .admin-controls button.btn-hover,
- .discourse-no-touch .admin-controls label.btn:hover,
- .discourse-no-touch .admin-controls label.btn.btn-hover,
- .discourse-no-touch .btn-default:hover, .discourse-no-touch .btn-default.btn-hover,
- .discourse-no-touch #show-tag-info:hover,
- .discourse-no-touch #show-tag-info.btn-hover, .discourse-no-touch .user-badges .btn:hover,
- .discourse-no-touch .user-badges .btn.btn-hover, .discourse-no-touch .signup-cta.alert.alert-info .btn:not(.btn-primary):hover,
- .discourse-no-touch .signup-cta.alert.alert-info .btn:not(.btn-primary).btn-hover {
-  background: $tertiary-hover;
-  color: $color-white;
+.discourse-no-touch .btn-default:hover, .discourse-no-touch .btn-default.btn-hover,
+ .discourse-no-touch #show-tag-info:hover, .discourse-no-touch #show-tag-info.btn-hover,
+ .discourse-no-touch .user-badges .btn:hover, .discourse-no-touch .user-badges .btn.btn-hover {
+   background: $tertiary-hover;
+   color: $color-white;
  }
 
 .discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
-    background: $tertiary-hover;
-    color: $color-white;
+  background: $tertiary-hover;
+  color: $color-white;
 }
 
 .nav-pills>li>a {
@@ -173,6 +167,12 @@ ol.category-breadcrumb {
   padding-right: 0;
   margin-right: 1rem;
   border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $tertiary;
+    border-bottom: 2px solid $tertiary-hover;
+    background-color: transparent;
+  }
 }
 
 .nav-pills>li a.active {
@@ -180,17 +180,15 @@ ol.category-breadcrumb {
   color: $color-black;
   font-weight: 700;
   border-bottom: 2px solid $tertiary;
+
+  &:hover {
+    border-bottom: 2px solid $tertiary-hover;
+    color: $tertiary;
+  }
 }
 
-.nav-pills>li a.active:hover {
-  border-bottom: 2px solid $tertiary-hover;
-  color: $tertiary;
-}
-
-.nav-pills>li>a:hover {
-  color: $tertiary;
-  border-bottom: 2px solid $tertiary-hover;
-  background-color: transparent;
+.nav-stacked {
+  background: $tertiary-low;
 }
 
 // Forms
@@ -220,3 +218,28 @@ ol.category-breadcrumb {
   background: $color-white;
   padding: 1em;
 }
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  .controls {
+    background: $tertiary-low;
+  }
+
+  .nav-pills {
+    background-color: $tertiary-low;
+  }
+
+  .nav-pills>li a.active {
+    background: none;
+    color: $tertiary;
+  }
+}
+
+.discourse-no-touch .admin-controls button:hover,
+ .discourse-no-touch .admin-controls button.btn-hover,
+ .discourse-no-touch .admin-controls label.btn:hover,
+ .discourse-no-touch .admin-controls label.btn.btn-hover {
+  background: $tertiary-hover;
+  color: $color-white;
+ }
