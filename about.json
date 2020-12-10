@@ -1,0 +1,30 @@
+{
+  "name": "discourse-olaf-theme",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "color_schemes": {
+    "olaf": {
+      "primary": "000000",
+      "secondary": "F0F8FF",
+      "tertiary": "4682b4",
+      "quaternary": "4682b4",
+      "header_background": "00102E",
+      "header_primary": "ffffff",
+      "highlight": "ffff4d",
+      "highlight-medium": "f4f1e3",
+      "danger": "e45735",
+      "success": "4682B4",
+      "love": "4682B4",
+      "danger-medium": "ec8972",
+      "tertiary-hover": "356287"
+    }
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
