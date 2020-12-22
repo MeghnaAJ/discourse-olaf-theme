@@ -1,7 +1,8 @@
 {
   "name": "discourse-olaf-theme",
-  "about_url": null,
-  "license_url": null,
+  "about_url": "https://meta.discourse.org/t/olaf-a-frozen-inspired-theme-for-discourse/172954",
+  "license_url": "https://github.com/MeghnaAJ/discourse-olaf-theme/blob/master/LICENSE",
+  "author": "Meghna",
   "assets": {},
   "color_schemes": {
     "olaf": {
